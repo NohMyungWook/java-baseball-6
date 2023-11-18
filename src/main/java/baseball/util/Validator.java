@@ -22,4 +22,9 @@ public class Validator {
         if (numbers.contains(IMPOSSIBLE_NUMBER))
             throw new IllegalArgumentException(ErrorMessage.INVALID_INPUT.getErrorMessage());
     }
+
+    public static void validateDuplication(List<Integer> numbers) {
+        if (numbers.stream().distinct().count() != CORRECT_SIZE)
+            throw new IllegalArgumentException(ErrorMessage.INVALID_INPUT.getErrorMessage());
+    }
 }

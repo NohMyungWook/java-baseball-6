@@ -15,6 +15,7 @@ public class NumberBaseball {
     private void validateMakeNumberBaseball(List<Integer> numbers) {
         Validator.validateSize(numbers);
         Validator.validateNotEmpty(numbers);
+        Validator.validateDuplication(numbers);
         Validator.validateNumber(numbers);
     }
 
