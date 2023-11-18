@@ -19,7 +19,6 @@ public enum ViewMessage implements Message {
     @Override
     public void print() {
         System.out.print(viewMessage);
-        printLine();
     }
 
     @Override
