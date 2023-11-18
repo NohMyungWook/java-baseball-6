@@ -11,6 +11,10 @@ public enum ErrorMessage implements Message {
         this.errorMessage = errorMessage;
     }
 
+    public String getErrorMessage() {
+        return errorMessage;
+    }
+
     @Override
     public void print() {
         System.out.print(errorMessage);
