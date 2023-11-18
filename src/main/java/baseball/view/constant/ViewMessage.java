@@ -1,6 +1,6 @@
 package baseball.view.constant;
 
-public enum ViewMessage {
+public enum ViewMessage implements Message {
     START("숫자 야구 게임을 시작합니다."),
     ASK_NUMBER("숫자를 입력해 주세요 : "),
     NOTHING("낫싱"),
@@ -14,5 +14,16 @@ public enum ViewMessage {
     
     ViewMessage(String viewMessage) {
         this.viewMessage = viewMessage;
+    }
+
+    @Override
+    public void print() {
+        System.out.print(viewMessage);
+        printLine();
+    }
+
+    @Override
+    public void printLine() {
+        System.out.println();
     }
 }

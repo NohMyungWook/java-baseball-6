@@ -1,6 +1,6 @@
 package baseball.view.constant;
 
-public enum ErrorMessage {
+public enum ErrorMessage implements Message {
     NOT_A_NUMBER("숫자가 아닙니다."),
     INVALID_INPUT("올바른 입력값이 아닙니다.")
     ;
@@ -9,5 +9,15 @@ public enum ErrorMessage {
 
     ErrorMessage(String errorMessage) {
         this.errorMessage = errorMessage;
+    }
+
+    @Override
+    public void print() {
+        System.out.print(errorMessage);
+    }
+
+    @Override
+    public void printLine() {
+        System.out.println();
     }
 }
