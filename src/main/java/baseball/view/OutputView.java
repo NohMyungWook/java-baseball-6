@@ -4,7 +4,7 @@ import baseball.view.constant.ViewMessage;
 
 public class OutputView {
     public void printStartMessage() {
-        ViewMessage.START.print();
+        ViewMessage.START.printLine();
     }
 
     public void printFinishMessage() {
