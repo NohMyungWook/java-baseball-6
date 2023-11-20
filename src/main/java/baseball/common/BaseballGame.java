@@ -12,12 +12,19 @@ public class BaseballGame {
 
     public void start() {
         NumberBaseball computer = initializeGameSetting();
-        NumberBaseball user = new NumberBaseball(inputView.readNumber());
-
+        do {
+            NumberBaseball user = new NumberBaseball(inputView.readNumber());
+        } while (wantToContinue());
     }
 
     private NumberBaseball initializeGameSetting() {
         outputView.printStartMessage();
         return numberMachine.makeAnswer();
     }
+
+    private boolean wantToContinue() {
+        outputView.printFinishMessage();
+        return inputView.wantToContinue();
+    }
+
 }

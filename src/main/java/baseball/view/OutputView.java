@@ -6,4 +6,8 @@ public class OutputView {
     public void printStartMessage() {
         ViewMessage.START.print();
     }
+
+    public void printFinishMessage() {
+        ViewMessage.CORRECT_ANSWER.printLine();
+    }
 }

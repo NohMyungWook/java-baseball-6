@@ -23,6 +23,6 @@ public enum ViewMessage implements Message {
 
     @Override
     public void printLine() {
-        System.out.println();
+        System.out.println(viewMessage);
     }
 }
