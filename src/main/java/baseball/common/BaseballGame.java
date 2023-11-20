@@ -3,7 +3,7 @@ package baseball.common;
 import baseball.model.BaseballResult;
 import baseball.model.NumberBaseball;
 import baseball.service.NumberMachine;
-import baseball.service.ResultMachine;
+import baseball.model.ResultMachine;
 import baseball.service.constant.MachineConstant;
 import baseball.view.InputView;
 import baseball.view.OutputView;
